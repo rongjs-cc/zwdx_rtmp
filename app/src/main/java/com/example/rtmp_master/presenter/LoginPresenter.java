@@ -2,6 +2,8 @@ package com.example.rtmp_master.presenter;
 
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
+
 import com.example.rtmp_master.activity.LaunchActivity;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutorService;
@@ -18,7 +20,6 @@ public class LoginPresenter {
     private LaunchActivity launchActivity;
     private ExecutorService executorServicePool = Executors.newCachedThreadPool();
     private MyHandle myHandle;
-
     /**
      * Handle(静态内部类)
      */
@@ -49,7 +50,7 @@ public class LoginPresenter {
         executorServicePool.execute(new Runnable() {
             @Override
             public void run() {
-
+                Log.e("==","login");
             }
         });
 
