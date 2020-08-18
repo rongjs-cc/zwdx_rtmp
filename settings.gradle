@@ -1,0 +1,2 @@
+rootProject.name='rtmp_master'
+include ':app', ':OnLive'

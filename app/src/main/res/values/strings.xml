@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">rtmp_master</string>
+    <string name="permission_pass">权限已通过</string>
+    <string name="permission_no_pass">权限未通过</string>
+</resources>

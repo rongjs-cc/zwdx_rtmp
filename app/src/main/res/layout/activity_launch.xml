@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LaunchActivity">
+
+    <EditText
+        android:id="@+id/lunact_edit_name"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lunact_edit_password"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:hint="请输入用户名：" />
+
+    <EditText
+        android:id="@+id/lunact_edit_password"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lunact_edit_roomnum"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:inputType="numberPassword"
+        android:hint="请输入密码：" />
+
+    <EditText
+        android:id="@+id/lunact_edit_roomnum"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入房间号："
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+
+
+    <EditText
+        android:id="@+id/lunact_edit_path"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lunact_edit_roomnum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="请输入服务器地址："/>
+
+    <Button
+        android:id="@+id/lunact_btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_below="@id/lunact_edit_path"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back_btn_login"/>
+
+</RelativeLayout>
